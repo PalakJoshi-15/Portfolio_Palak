@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-container"> <!-- Flex wrapper for full layout -->
+        <header>
+            <div class="logo-container">
+                <img src="./logo.png" alt="Logo" />
+            </div>
+
+            <nav class="header-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="Resume_PalakJoshi.pdf" download>Resume</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div id="home" class="typewriter">
+                <h1 id="typewriter-text" class="animate" style="font-size: 35px">Hi! My name is Palak</h1>
+            </div>
+
+            <div id="about" class="section">
+                <h2 style="font-family:'Courier New', monospace; color: white; text-align: left; font-weight: bold;">About Me...</h2>
+                <h3 style="font-family:monospace; color: #333; line-height: 1.5;">My background was originally in the field of Microbiology, having obtained a Bachelor of Science from Gujarat University and over 10 years of experience in laboratory analysis. This cultivated my curiosity for patterns and problem-solving, leading to a transition into the world of Data Science and Quality Assurance. As a Data Analyst, I’m passionate about leveraging data visualization, reporting, and business intelligence tools to improve operational efficiency and support strategic decision-making. I bring a scientific mindset and analytical rigor to every project, and am eager to contribute to organizations making smarter, data-driven decisions.</h3>
+            </div>
+
+            <!-- Credit to svgrepo.com and simple-icons for providing the Icons used below -->
+            <div id="skills" class="section">
+                <h2 style="font-family:'Courier New', monospace; color: white; text-align: left; font-weight: bold;">Skills...</h2>
+                <div class="icon-row">
+                    <div class="icon-container tooltip">
+                        <img src="images/python.svg" alt="Python" class="icon" title="Smiley face">
+                        <span class="tooltiptext">Python</span>
+                    </div>
+                    <div class="icon-container tooltip">
+                        <img src="images/sql.svg" alt="SQL" class="icon">
+                        <span class="tooltiptext">SQL</span>
+                    </div>
+                    <div class="icon-container tooltip">
+                        <img src="images/tableau.svg" alt="Tableau" class="icon">
+                        <span class="tooltiptext">Tableau</span>
+                    </div>
+                    <div class="icon-container tooltip">
+                        <img src="images/excel.svg" alt="Excel" class="icon">
+                        <span class="tooltiptext">Microsoft Excel</span>
+                    </div>
+                    <div class="icon-container tooltip">
+                        <img src="images/powerbi.png" alt="Power BI" class="icon">
+                        <span class="tooltiptext">Microsoft PowerBI</span>
+                    </div>
+                    <div class="icon-container tooltip">
+                        <img src="images/snowflake.svg" alt="Snowflake" class="icon">
+                        <span class="tooltiptext">Snowflake AI</span>
+                    </div>
+              </div>
+            </div>
+            <br>
+
+            <div id="projects" class="section">
+                <h2 style="font-family:'Courier New', monospace; color: white; text-align: left; font-weight: bold;">Projects...</h2>
+                <h3 style="font-family:monospace; color: #333">
+                    <div class="projects-list">
+                        <div class="project">
+                            <div class="project-info">
+                                <h2 class="project-title">Predicting Instacart Purchases</h2>
+                                <p class="project-desc">Using open-source data from Kaggle and the Jupyter notebook, created a model a model that predicts which previously purchased products will be in a user’s next order.</p>
+                                <div class="status">
+                                    <a href="https://github.com/PalakJoshi-15/Instacart" class="view-more-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-info">
+                                <h2 class="project-title">Customer Churn-rate Analysis</h2>
+                                <p class="project-desc">Using data from a csv file representative of a telecom company, utilized Microsoft PowerBI to create a dashboard that analyzes customer churn rate based on variables such as Gender, age group, contract type, Tenure, etc.</p>
+                                <div class="status">
+                                    <a href="https://github.com/PalakJoshi-15/Customer-Churn-Rate-Analysis" class="view-more-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="project">
+                            <div class="project-info">
+                                <h2 class="project-title">SQL Customer Sales Exploratory Data Analysis</h2>
+                                <p class="project-desc">Used SQL in order to explore sales data and performed RFM analyses. The final segmentation dashboard as well as the SQL file are available on the GitHub repository.</p>
+                                <div class="status">
+                                    <a href="https://github.com/PalakJoshi-15/SQL-Customer-Sales-Data-EDA" class="view-more-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-info">
+                                <h2 class="project-title">Python Customer Lifetime Value (CLV) Analysis</h2>
+                                <p class="project-desc">Used the Pandas, Matplotlib and Seaborn Python libraries in order to perform CLV analysis on a Kaggle dataset. </p>
+                                <div class="status">
+                                    <a href="https://github.com/PalakJoshi-15/Customer-Lifetime-Value-Analysis-using-Python" class="view-more-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-info">
+                                <h2 class="project-title">kNN Iris Data Set Classification</h2>
+                                <p class="project-desc">Exploring the iris dataset and learned about kNN using Python.</p>
+                                <div class="status">
+                                    <a href="https://github.com/PalakJoshi-15/Iris-Data/blob/main/Classification%20of%20Iris%20data%20using%20kNN.ipynb" class="view-more-btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project" id="github-link">
+                            <a href="https://github.com/PalakJoshi-15">
+                            <div class="project-info">
+                                <div class="project-image">
+                                    <img height="64" width="64" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/github.svg" />
+                                </div>
+                                <p class="project-title">See the rest of my GitHub Projects by clicking here!</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </h3>
+            </div>
+        </main>
+
+        <footer id="contact" class="footer">
+            <p>Author: Palak Joshi<br>
+                <br>
+                <a href="mailto:palakkjoshi@gmail.com">palakkjoshi@gmail.com</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
