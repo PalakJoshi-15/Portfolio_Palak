@@ -1,0 +1,244 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #6babae, #9198e5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Container to manage layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 1em;
+}
+
+.content {
+    flex: 1;
+    padding-top: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px; /* Prevent overlap with footer */
+}
+
+.header {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+/* ICON ROW */
+.icon-row {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-container {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+/* Adding tooltips so viewers can see the names of the icons. Thanks to W3Schools for providing this piece of code */
+.tooltip {
+    position: relative;
+    display: flex;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: monospace;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* The following pieces of code for the project list are taken from adhikareeprayush from GitHub */ 
+/* Add instacart, churnrate, SQL customer sales, customer-lifetime, iris */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    grid-column-gap: 0.1em;
+    place-items: center;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white; 
+    border-radius: 7px;
+    padding: 15px 30px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* This prevents extra text from showing beyond the bubble */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.project-image {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the container takes full width of its parent */
+    height: 60%; /* Ensure the container takes full height of its parent */
+}
+.project-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+.project-title {
+    font-size: 24px;
+    color: black;
+}
+.project-desc {
+    font-size: 14px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-more-btn {
+    background-color: var(--dark-200);
+    padding: 10px 20px;
+}
+
+/* Adding a footer that has a subte gradient from the bottom of the page */
+.footer {
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(to top, #6babae 90%, #9198e5 10%); /* Set a solid color for the footer */
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-family: monospace;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: sticky; 
+    /* position: fixed; 
+    top: 0; */
+}
+
+/* Making the container for the logo that spins when a mouse hovers over it */
+.logo-container {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+.logo-container:hover {
+    transform: rotateY(360deg);
+}
+.logo-container img {
+    width: 70px;
+    height: auto;
+}
+
+/* NAVIGATION LINKS */
+.header-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+.header-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: monospace;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.header-links a:hover {
+    color: #007BFF;
+}
+
+/*Credit to https://css-tricks.com/snippets/css/typewriter-effect/ for the typewriter effect */
+.typewriter h1 {
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    letter-spacing: .15em;
+    max-width: 100%;
+    white-space: nowrap;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+}
+.typewriter h1.animate {
+    animation: typing 1.5s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: monospace;
+    color: #333;
+    font-weight: normal;
+}
